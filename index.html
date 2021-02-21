@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Body Mass Index Calculator</h1>
+</header>
+<main>
+    <form>
+        <label for="name">Enter Your Name: </label>
+        <input type="text" name="username" id="name" value="John Doe" required="required" >
+
+
+        <br>
+
+        <label for="weight">Enter Your Weight(lb): </label>
+        <input type="number" name="weight" id="weight" value="197" min="88" max="353" required="required">
+
+        <br>
+
+        <label for="height">Enter Your Height(in): </label>
+        <input type="number" name="height" id="height" value="69" min="59" max="79" required="required">
+
+        <br>
+
+        <button type="submit">Calculate BMI</button>
+    </form>
+
+    <h3>Results</h3>
+    <p id="message"></p>
+
+</main>
+<footer id="footer">
+    <p>Copyright of Jacob Perez</p>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="code.js"></script>
+</html>
